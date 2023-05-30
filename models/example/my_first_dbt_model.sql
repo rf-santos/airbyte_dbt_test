@@ -11,13 +11,11 @@
 
 with source_data as (
 
-    select 1 as id
-    union all
-    select null as id
+    select * from telco_churn.main_churn
 
 )
 
-select *
+select distinct gender
 from source_data
 
 /*
